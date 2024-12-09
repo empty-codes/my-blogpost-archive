@@ -1,6 +1,6 @@
 ---
 title: "Me, Open Source and Outreachy"
-seoTitle: "How I Got Accepted into Outreachy"
+seoTitle: "Me, Open Source and Outreachy"
 seoDescription: "A blogpost introducing myself, open source, outreachy and wikimedia"
 datePublished: Mon Dec 09 2024 15:24:23 GMT+0000 (Coordinated Universal Time)
 cuid: cm4h6o17u000108mbgvcn3yxn
