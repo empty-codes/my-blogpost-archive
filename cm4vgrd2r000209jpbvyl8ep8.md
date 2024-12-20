@@ -45,10 +45,9 @@ app/views/system_status/index.html.haml:1:1: E: Lint/Syntax: unexpected token tD
 
 1 file inspected, 1 offense detected
 
-this is line 1: .container.queues 
+this is line 1: .container.queues
 ```
 
-  
 When I changed the first line to `%div.container.queues`, a similar error still appeared:
 
 ```bash
@@ -64,7 +63,7 @@ Fed up, I decided to just add a RuboCop special comment to the file so it would 
 # rubocop:enable Lint/Syntax
 ```
 
-Then the page would not render at all because `#` is unsupported syntax in haml. I finally thought to check the `rubocop.yml` file and guess what the whole `../app/views/` directory was already excluded to start with! 🤡
+Then the page would not render because `#` is unsupported syntax in haml. I finally thought to check the `rubocop.yml` file and guess what, the whole `../app/views/` directory was already excluded to start with! 🤡
 
 The lesson? **Check relevant config files before trying to troubleshoot an error**; it could save you time and effort by confirming whether the issue is even applicable in the current context.
 
