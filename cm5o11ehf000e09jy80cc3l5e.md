@@ -46,12 +46,12 @@ The proposed UI is a work in progress and it will be integrated into the existin
 
 ## The Why
 
-The Dashboard is an application that’s more important than it seems at first glance. While on Phabricator, I stumbled upon comments thanking my mentor and longtime maintainer, Sage Ross, for getting the Dashboard back up and running after a downtime:
+The Dashboard is an application that’s more important than it might seem. While on Phabricator, I stumbled upon comments thanking my mentor and longtime maintainer, Sage Ross, for getting the Dashboard back up and running after a downtime:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736259985561/a35c5cd4-4383-4bcb-859a-c4aaa3d9ffa8.png align="center")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736260281224/7721e387-52af-46c1-8fd0-2597fe67fff2.png align="center")
 
-This is what excites me about working on this project: the opportunity to contribute to something genuinely needed by people. This is the biggest project I’ve ever worked on, and the fact that it’s open source means my efforts are out there in the open for anyone to see. Contributing to the Wiki Education Dashboard felt daunting at first, but I’m so glad I took the chance. It’s helped me grow so much as a software developer, and I can’t wait to keep making meaningful contributions and learning even more along the way.  
-  
+This is what excites me about working on this project: the opportunity to contribute to something genuinely needed by people. This is the biggest project I’ve ever worked on, and the fact that it’s open source means my efforts are out there in the open for anyone to see. Contributing to the Wiki Education Dashboard felt daunting at first, but I’m so glad I took the chance. It’s helped me grow so much as a software developer, and I can’t wait to keep making meaningful contributions and learning even more along the way.
+
 This is all for now, Thanks for reading and I hope you learned something! 😊✨
