@@ -20,7 +20,7 @@ First thing to note is that the Wiki Education Dashboard actually has 2 differen
 
 My project is titled ‘**Improve observability of Wiki Education Dashboard**'—pretty straightforward, right? Well unless you don’t know what observability is. A few months ago, I did not.
 
-According to [Wikipedia](https://en.wikipedia.org/wiki/Observability_\(software\)#:~:text=observability%20measures%20how%20well%20a%20system%27s%20state%20can%20be%20understood%20from%20the%20obtained%20telemetry%20\(metrics%2C%20logs%2C%20traces%2C%20profiling\).), “Observability measures how well a system's state can be understood from obtained telemetry (metrics, logs, traces, profiling)”. Basically how much information can be gleamed using data in form of system metrics, logs and other information. So in short, the purpose of my project is to make it easier for system administrators and end-users (course instructors, students, and others) to detect and understand problems with the system - the Dashboard.
+According to [Wikipedia](https://en.wikipedia.org/wiki/Observability_\(software\)#:~:text=observability%20measures%20how%20well%20a%20system%27s%20state%20can%20be%20understood%20from%20the%20obtained%20telemetry%20\(metrics%2C%20logs%2C%20traces%2C%20profiling\).), “Observability measures how well a system's state can be understood from obtained telemetry (metrics, logs, traces, profiling)”. Basically how much information can be gleaned using data in form of system metrics, logs and other information. So in short, the purpose of my project is to make it easier for system administrators and end-users (course instructors, students, and others) to detect and understand problems with the system - the Dashboard.
 
 Observability is typically the responsibility of [Site Reliability Engineers](https://en.wikipedia.org/wiki/Site_reliability_engineering) (SREs), but in full-stack environments, it often falls to Backend or Full-Stack Engineers as well. As a Full-Stack Engineer with a backend focus, this project is a great fit for me.
 
@@ -40,18 +40,22 @@ I’ve started tackling this by archiving redundant errors and addressing the ac
 
 ## 3\. Building a User-facing System Status and Performance User Interface (UI) 👩‍💻
 
-A typical system status site is used to provide essential context to admins and users about the system's status, helping reduce confusion during outages or slowdowns. For example, platforms like [Reddit Status](https://www.redditstatus.com/) and [Wikimedia Status](https://www.wikimediastatus.net/) use such sites to communicate the current state of their systems, including ongoing issues, scheduled maintenance, or performance disruptions. Status UIs display key metrics and historical data, providing a comprehensive overview of performance and reliability. This allows admins to address concerns proactively, while users can quickly determine whether the problems they face are system-wide or specific to their usage.
+A typical system status site is used to provide essential context to admins and users about the system's status, helping reduce confusion during outages or slowdowns. For example, platforms like [Reddit Status](https://www.redditstatus.com/) and [Wikimedia Status](https://www.wikimediastatus.net/) use such sites to communicate the current state of their systems, including ongoing issues, scheduled maintenance, or performance disruptions.  
+  
+The proposed Status UI for the Dashboard is however user-facing, in the sense that its purpose is to clearly indicate whether the system components are functioning normally and, if not, provide insights like when the issue might be resolved. For example, the numerous courses in the Dashboard undergo updates that pull in useful statistics such as the number of articles edited, which editors make which contributions and so on. The duration of such an update is linear to the size of the course and errors can also occur during the process. As such, the [Sidekiq](https://github.com/sidekiq/sidekiq/wiki) queues processing the updates have varying latencies that would indicate whether there is a backlog or the queues are working in good time.  
+  
+An important part of my work involves deciding the level of detail to show and how to convert raw system data like latencies into user-friendly metrics that anyone—regardless of their technical knowledge—can understand.
 
-The proposed UI is a work in progress and it will be integrated into the existing Dashboard code, with its frontend server-rendered using Rails. An important part of my work involves deciding the level of detail to show and how to convert raw system data into user-friendly metrics that anyone—regardless of their technical knowledge—can understand. These metrics should clearly indicate whether the system components are functioning normally and, if not, provide insights like when the issue might be resolved.
+The UI will be integrated into the existing Dashboard code, with its frontend server-rendered using Rails.
 
 ## The Why
 
-The Dashboard is an application that’s more important than it might seem. While on Phabricator, I stumbled upon comments thanking my mentor and longtime maintainer, Sage Ross, for getting the Dashboard back up and running after a downtime:
+The Dashboard is an application that’s more important than it might seem. While on Phabricator, I stumbled upon these comments thanking my mentor and longtime maintainer, Sage Ross, for getting the Dashboard back up and running after a downtime:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736259985561/a35c5cd4-4383-4bcb-859a-c4aaa3d9ffa8.png align="center")
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736260281224/7721e387-52af-46c1-8fd0-2597fe67fff2.png align="center")
 
-This is what excites me about working on this project: the opportunity to contribute to something genuinely needed by people. This is the biggest project I’ve ever worked on, and the fact that it’s open source means my efforts are out there in the open for anyone to see. Contributing to the Wiki Education Dashboard felt daunting at first, but I’m so glad I took the chance. It’s helped me grow so much as a software developer, and I can’t wait to keep making meaningful contributions and learning even more along the way.
+This is what excites me about working on this project: the opportunity to contribute to something genuinely needed by people. This is the biggest project I’ve ever worked on, and the fact that it’s open source means my efforts are out there in the open for anyone to see. Contributing to the Wiki Education Dashboard felt daunting at first, but I’m so glad I took the chance. It’s helping me grow exponentially as a software developer, and I can’t wait to keep making meaningful contributions and learning even more along the way.
 
 This is all for now, Thanks for reading and I hope you learned something! 😊✨
