@@ -20,7 +20,7 @@ I started my efforts on the documentation weeks ago and in [this article](https:
 
 ### Reducing Noise
 
-I kicked off my efforts to optimize Sentry error reporting with a comprehensive analysis of the Sentry configuration, followed by implementing initial filtering actions to reduce noise by week 2 which involved marking currently unactionable issues as ‘Archived’ and already resolved issues as ‘Resolved’. This helped declutter the dashboards to some extent.  
+I kicked off my efforts to optimize Sentry error reporting with a comprehensive analysis of the Sentry configuration, followed by implementing initial filtering actions to reduce noise by week 2 which involved marking currently unactionable issues as ‘Archived’ and already resolved issues as ‘Resolved’. This helped declutter the dashboards to some extent.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1737296774712/72a9a580-8d01-4719-ab4f-e9958ba761a5.png align="center")
 
@@ -34,13 +34,12 @@ While the UI hasn’t been launched yet, it’s coming together steadily, and I 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1737297601121/8bb6748d-2cd1-44cc-a31a-c02b23c8a210.png align="center")
 
-### [  
-](https://github.com/WikiEducationFoundation/WikiEduDashboard/pull/6114)Reflections
+### Reflections
 
-Overall, I’m on track with my internship timeline and project goals, which you can check out [here](https://phabricator.wikimedia.org/T378119). Looking back, I laugh a little at how meticulously I outlined my timeline—especially for the noise reduction work, as debugging is never so straightforward.  
-  
-As someone relatively new to Rails and Ruby, I’ve had to dedicate extra time to learning the concepts in depth. Writing new code has been a bit challenging because I try to ensure it’s not just functional but also maintainable. Some parts of the codebase haven’t been touched since they were written about eight years ago, and I want the code I contribute to be just as robust and long-lasting.  
-  
+Overall, I’m on track with my internship timeline and project goals, which you can check out [here](https://phabricator.wikimedia.org/T378119). Looking back, I laugh a little at how meticulously I outlined my timeline—especially for the noise reduction work, as debugging is never so straightforward.
+
+As someone relatively new to Rails and Ruby, I’ve had to dedicate extra time to learning the concepts in depth. Writing new code has been a bit challenging because I try to ensure it’s not just functional but also maintainable. Some parts of the codebase haven’t been touched since they were written about eight years ago, and I want the code I contribute to be just as robust and long-lasting.
+
 Another learning curve has been testing. Writing tests for bug fixes and running them to ensure they work as expected (and don’t break anything) has become part of my routine. The same goes for my UI implementation. While testing isn’t as foreign to me as it was a few months ago, I still have a lot to learn about writing “perfect” tests.
 
 Moving forward, I aim to push myself even more in terms of learning and productivity. Thank you for reading—I hope you found this update insightful! 😊✨
