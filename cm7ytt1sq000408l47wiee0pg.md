@@ -1,7 +1,7 @@
 ---
 title: "I'm in a Better Headspace"
-seoTitle: "Advice I received from Senior Software Engineers"
-seoDescription: "Learn valuable advice from experienced software engineers"
+seoTitle: "Chats with Senior Software Engineers"
+seoDescription: "Valuable advice from experienced software engineers"
 datePublished: Fri Mar 07 2025 13:43:20 GMT+0000 (Coordinated Universal Time)
 cuid: cm7ytt1sq000408l47wiee0pg
 slug: im-in-a-better-headspace
